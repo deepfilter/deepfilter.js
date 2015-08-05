@@ -1,0 +1,40 @@
+.fb-comments {
+position: absolute !important;
+z-index: 1;
+top: 0;
+left: 0;
+right: 0;
+padding-top: 20px;
+background: #f6f7f8;
+box-shadow: 1px 1px 5px #888888;
+}
+
+.fb-comments span, .fb-comments iframe {
+width: 100% !important;
+}
+
+.fb-comments-close {
+position: absolute;
+top: -3px;
+right: 11px;
+font: bold large "Comic Sans MS", cursive, sans-serif;
+color: #ccc;
+cursor: default;
+transition: color 0.2s ease;
+-webkit-transition: color 0.2s ease;
+}
+
+.fb-comments-close:hover {
+color: #000;
+}
+
+.fb-comments-loader {
+position: absolute;
+z-index: -1;
+top: 5px;
+left: 0;
+right: 0;
+width: 30px;
+height: 30px;
+background: url('/img/loader.gif') no-repeat ;
+}
