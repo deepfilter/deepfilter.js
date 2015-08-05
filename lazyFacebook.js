@@ -1,3 +1,7 @@
+// Call plugin
+$('a').lazyFacebook('http://deepfilter.org/hashtags', 3, 'reverse_time', '100%');
+
+// Plugin
 $.fn.lazyFacebook = function(url, number, type, pixels) {
 $(this).on('click', function(e) {
 e.preventDefault();
