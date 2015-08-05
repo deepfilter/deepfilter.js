@@ -1,2 +1,2 @@
 # deepfilter.js
-Search and filter database
+Plugins sencillos construidos con jQuery para buscar y filtrar bases de datos.
