@@ -1,2 +1,2 @@
-# jquery-deepfilter
+# deepfilter.js
 Search and filter database
