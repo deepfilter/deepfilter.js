@@ -1,7 +1,12 @@
-$.fn.liveFilter = function(column) {
-$('li:first-child').addClass('true li-underline');
+// Call plugin
+$('li').liveFilter('td:nth-child(1), 1');
+
+// Plugin
+$.fn.liveFilter = function(column, n) {
+var selected = $('li:nth-child(' + n + ')').text();
+$('li:nth-child(' + n + ')').addClass('true li-underline');
 $(column).each(function() {
-if (!($(this).text() == 'Hashtags')) {
+if (!($(this).text() == selected)) {
 $(this).parent().hide();
 } 
 });
