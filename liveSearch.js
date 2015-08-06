@@ -1,3 +1,7 @@
+// Call plugin
+$('input').focus().liveSearch('table');
+
+// Plugin
 $.fn.liveSearch = function(table) {
 $(this).on('keyup', function() {
 var val = $.trim($(this).val()).replace(/Ã¡/g, 'a').replace(/Ã©/g, 'e').replace(/Ã­/g, 'i').replace(/Ã³/g, 'o').replace(/Ãº/g, 'u').toLowerCase();
