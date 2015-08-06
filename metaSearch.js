@@ -1,3 +1,7 @@
+// Call plugin
+$('input').metaSearch('td:nth-child(1)', 'twitter.com/hashtag');
+
+// Plugin
 $.fn.metaSearch = function(term, url) {
 if (document.cookie.indexOf('cookieMetaSearch') > -1) { 
 var cookieMetaSearch = document.cookie.replace(/(?:(?:^|.*;\s*)cookieMetaSearch\s*\=\s*([^;]*).*$)|^.*$/, "$1"); 
