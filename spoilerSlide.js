@@ -1,3 +1,7 @@
+// Call plugin
+$('dl').spoilerSlide();
+
+// Plugin
 $.fn.spoilerSlide = function() {
 var allPanels = $('dl dd').hide();
 $('dl dd:nth-of-type(1)').show().addClass('active');
