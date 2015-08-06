@@ -5,7 +5,8 @@ $('dl').spoilerSlide();
 $.fn.spoilerSlide = function() {
 var allPanels = $('dl dd').hide();
 $('dl dd:nth-of-type(1)').show().addClass('active');
-$('dl> dt > a').click(function() {
+$('dl> dt > a').click(function(e) {
+e.preventDefault();
 $this = $(this);
 $target =  $this.parent().next();
 if(!$target.hasClass('active')){
